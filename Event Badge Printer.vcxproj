@@ -145,11 +145,13 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="helpers\helpers.cpp" />
     <ClCompile Include="io\io.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="validate\validate.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="helpers\helpers.h" />
     <ClInclude Include="io\io.h" />
     <ClInclude Include="validate\validate.h" />
   </ItemGroup>
