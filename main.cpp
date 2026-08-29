@@ -19,7 +19,7 @@ int main()
 	}
 
 	const std::uint16_t registrationNumber{ getRegistrationNumber() };
-	if (!isRegistrationNumberVaild(registrationNumber)) {
+	if (!isRegistrationNumberValid(registrationNumber)) {
 		std::cout << "Registration number invalid!";
 
 		return EXIT_FAILURE;

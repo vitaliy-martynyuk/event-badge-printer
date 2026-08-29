@@ -7,6 +7,6 @@
 
 bool isFullNameValid(std::string_view name);
 bool isAccessLevelValid(char level);
-bool isRegistrationNumberVaild(std::uint16_t number);
+bool isRegistrationNumberValid(std::uint16_t number);
 
 #endif

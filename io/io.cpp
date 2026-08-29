@@ -16,7 +16,7 @@ char getAccessLevel()
 	char input{};
 	std::cin >> input;
 
-	return static_cast<char>(std::toupper(input));
+	return static_cast<char>(std::toupper(static_cast<unsigned char>(input)));
 }
 
 std::uint16_t getRegistrationNumber()
