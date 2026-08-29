@@ -4,6 +4,7 @@
 #include <string>
 #include <string_view>
 #include <cstdint>
+#include <cctype>
 
 std::string getFullName();
 char getAccessLevel();

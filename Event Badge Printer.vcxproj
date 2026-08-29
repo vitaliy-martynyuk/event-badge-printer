@@ -147,9 +147,11 @@
   <ItemGroup>
     <ClCompile Include="io\io.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="validate\validate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="io\io.h" />
+    <ClInclude Include="validate\validate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
