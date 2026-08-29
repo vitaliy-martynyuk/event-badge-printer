@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Event Badge Printer.vcxproj" />
+  <Project Path="Event Badge Printer.vcxproj" Id="5caf9b05-da73-433a-9f42-e90f98b489dc" />
 </Solution>
