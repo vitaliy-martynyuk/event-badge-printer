@@ -1,18 +1,31 @@
 #include "io/io.h"
+#include "validate/validate.h"
 #include <iostream>
 
 int main()
 {
-	const std::string name{ getFullName() };
-	// name validation
+	const std::string fullName{ getFullName() };
+	if (!isFullNameValid(fullName)) {
+		std::cout << "Full name invalid!";
 
-	const char access{ getAccessLevel() };
-	// access validation
+		return EXIT_FAILURE;
+	}
 
-	const std::uint16_t number{ getRegistrationNumber() };
-	// number validation
+	const char accessLevel{ getAccessLevel() };
+	if (!isAccessLevelValid(accessLevel)) {
+		std::cout << "Access level invalid!";
 
-	printBadgeInfo(name, access, number);
+		return EXIT_FAILURE;
+	}
 
-	return 0;
+	const std::uint16_t registrationNumber{ getRegistrationNumber() };
+	if (!isRegistrationNumberVaild(registrationNumber)) {
+		std::cout << "Registration number invalid!";
+
+		return EXIT_FAILURE;
+	}
+
+	printBadgeInfo(fullName, accessLevel, registrationNumber);
+
+	return EXIT_SUCCESS;
 }
